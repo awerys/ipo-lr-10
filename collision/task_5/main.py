@@ -5,8 +5,6 @@ def intersectionAreaMultiRect(rectangles):
         return 0
     for rect in rectangles:
         (x1, y1), (x2, y2) = rect
-        if not (x1 < x2 and y1 < y2):
-            raise RectCorrectError("Прямоугольник некорректный")
     if len(rectangles) == 2:
         (x1, y1), (x2, y2) = rectangles[0]
         (x3, y3), (x4, y4) = rectangles[1]
